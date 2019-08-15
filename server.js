@@ -16,7 +16,7 @@ if(process.env.NODE_ENV === 'development') {
 app.use('/api/v1/profile', require('./routes/profile'))
 
 //handle production
-if(process.env.NODE_ENV == 'production') {
+if(process.env.NODE_ENV === 'production') {
     // set static folder
     app.use(express.static(__dirname + '/public'))
 
